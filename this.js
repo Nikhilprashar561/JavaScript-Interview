@@ -116,6 +116,8 @@ console.log(applyMethod.bind(objectApply, ...applyArr))
 const bindApply = applyMethod.bind(objectApply, ...applyArr)
 console.log("Yeh hai Bind Apply", bindApply())
 
+// New Keyword in js
+
 
 function User(name, classes){
     this.name = name
