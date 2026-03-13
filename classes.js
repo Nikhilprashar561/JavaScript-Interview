@@ -99,3 +99,24 @@ console.log(children)
 console.log(parent.inherit())
 console.log(children.family())
 
+// Getter and Setter
+
+class User{
+    constructor(name){
+        this.name = name
+    }
+    get username(){
+        return `Hey Your name is ${this.name}`
+    }
+    set addnew(name){
+        return this._name = name
+    }
+}
+
+const user = new User("Nikhil")
+console.log(user.username)
+user.name = 8521
+console.log(user.username)
+user.name = "Chor"
+console.log(user.username)
+user.addnew = "Chor"
