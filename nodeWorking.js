@@ -33,6 +33,12 @@ fs.readFile("./sample.txt", "utf-8", (err, res) => {
 
   crypto.pbkdf2("hello", "Nikhil", 10000, 1024, "sha512", () => {
     console.log(`${Date.now() - start}Hello Password Generated 3`);
+
+    setTimeout(() => {
+      console.log("Hash Password ke andar 3 wale ke")
+    })
+
+    setImmediate(() => console.log("Hello Password Immediate 3"))
   });
 
   crypto.pbkdf2("hello", "Nikhil", 10000, 1024, "sha512", () => {
