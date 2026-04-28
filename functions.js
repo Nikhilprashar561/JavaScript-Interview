@@ -22,4 +22,3 @@ function addName(a, b){
 const nam = addName(5, 5)
 
 console.log(nam(25))
-

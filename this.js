@@ -252,4 +252,3 @@ console.log(a2.sum())
 
 
 console.log(a1.pr)
-

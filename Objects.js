@@ -68,4 +68,3 @@ console.log(deep)
 const actuallyDeepCopy = structuredClone(deep) // With this method everythink we get into object nestest and not change actual object
 
 console.log(actuallyDeepCopy)
-
